@@ -17,5 +17,7 @@
 nyan cat can be offline sometimes because the servers can be slow sometimes but after a month it resets the datas so servers doesnt crash that much
 
 [nyan cat website 1](https://nyan--cat.glitch.me)
+   
+      
 [nyan cat website 2](https://discord.nyancat.tk)
     
