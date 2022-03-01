@@ -1,0 +1,30 @@
+for (let i = 0; i < 500; i++) {
+ console.log("% installing packages")
+} 
+
+
+setTimeout(function(){
+ 	console.log("connecting...");
+}, 7000);
+
+setTimeout(function(){
+ 	console.log("connected!");
+}, 8000);
+
+setTimeout(function(){
+ 	console.log("datas loading...");
+}, 9000);
+
+setTimeout(function(){
+ 	console.log("datas ready!");
+}, 10000);
+
+setTimeout(function(){
+ 	console.log("getting requests...");
+}, 10500);
+
+    
+
+
+
+

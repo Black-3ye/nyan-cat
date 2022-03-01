@@ -1,0 +1,372 @@
+<link
+  rel="icon"
+  type="image/png"
+  href="https://www.nicepng.com/png/full/114-1148219_cool-cat-nyan-cat-head-png.png
+"
+/>
+<style>
+  
+  body{
+    
+    background-color: #96BEE9;
+  }
+  
+  html {
+    color: #E35AE7;
+    cursor:copy;
+  }
+
+  h1,
+  p,
+  h3 {
+    font-family: Arial;
+  }
+
+  button {
+    border-style: inset;
+    background-color: gray;
+    color: white;
+  }
+
+  p {
+    color: rgb(3,3,83);
+    font-family: Arial;
+    font-weight: 900;
+  }
+
+  h1 {
+    color: blue;
+  }
+
+  h3 {
+    color: blue;
+  }
+
+  section {
+    background-color: pink;
+  }
+  
+  h2 {
+    
+    color: blue;
+    font-family: Arial;
+    
+  }
+  
+  .section3 {
+    
+    background-color: pink;
+ font-family: Arial;
+    color: blue;
+    background-color: pink;
+    font-weight: 900;
+    
+  }
+
+  .xer {
+    
+    text-align: left;
+    font-family: Arial;
+    font-weight: 900;
+    
+  }
+  
+  .nofear {
+    
+    color: rgb(65,4,4);
+    
+  }
+ 
+  
+  
+</style>
+
+<html>
+  <body>
+    <title>nyan_cat</title>
+    <head>
+      <center>
+        <h1>
+          NYAN CAT
+        </h1>
+        <h3>
+          THE RAID BOT
+        </h3>
+      
+        <img
+          src="https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif"
+        />
+        <br />
+        <br />
+        <br />
+        <br />
+        <button
+          onclick="location.href='https://discord.com/oauth2/authorize?client_id=917827603342168105&scope=bot&permissions=8'"
+        >
+          add the bot
+        </button>
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        <p>
+          coded by black eye
+        </p>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      <br>
+        <section>
+          <h1>
+            commands:
+          </h1>
+
+          <p>
+            n!help = tooks you to this site
+          </p>
+
+          <br />
+
+          <p>
+            n!raid = raids the whole server
+          </p>
+
+          <br />
+
+          <p>
+            n!role = creates tons of roles
+          </p>
+
+          <br />
+
+          <p>
+            n!spam = spams and mentions everyone not (forever tho)
+          </p>
+
+          <br />
+
+          <p>
+            n!ban = bans everyone
+          </p>
+
+          <br />
+
+          <p>
+            n!kick = kicks everyone
+          </p>
+
+          <br />
+
+          <p>
+            n!dm = dms everyone (unfortunately not custom but effective)
+          </p>
+
+          <br />
+
+          <p>
+            n!admin = gives you admin (can create channels etc (how cool is
+            that?))
+          </p>
+
+          <br />
+
+          <p>
+            n!cheese = bans the mentioned user (sounds fun right?)
+          </p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+           
+         
+           <div class="xer">
+   
+      
+      <p class="thema">
+            i can get banned on discord so i cant add my discord account 
+    
+             </p>
+             <br>
+             <p>
+               but if you still want to reach me feel free to email me: anon_blackeye@protonmail.com
+             </p>
+             <br>
+             <p>
+               my personal website (it has github in it)
+             </p>
+   <a href="https://discorda.black-eye.tk">my personal website</a>
+      </div>
+           
+        </section>
+        </center>
+      
+
+
+      <style>
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: purple;
+          color: white;
+          text-align: center;
+        }
+      </style>
+    </head>
+  </body>
+</html>
+
+<style>
+  main {
+    padding: 1rem;
+  }
+
+  p {
+    max-width: 500px;
+  }
+
+  .note {
+    font-size: small;
+    color: #9B9B9B;
+  }
+
+  .content {
+    margin: 50px;
+    position: fixed;
+  }
+
+  #loader:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: ellipsis steps(4, end) 1000ms infinite;
+    content: "\2026";
+    width: 0px;
+  }
+
+  @keyframes ellipsis {
+    to {
+      width: 1.25em;
+    }
+  }
+
+  canvas#background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+</style>
+
+<body>
+  <main>
+    <div class="content">
+      <p class="status">
+        <span id="message"></span>
+        <span id="lr"></span>
+      </p>
+      <p class="note"></p>
+    </div>
+  </main>
+  <canvas id="background" />
+
+  <script>
+    // drawing
+
+    var canvas, context, canvasImage;
+
+    var cursorPosition = {
+      x: undefined,
+      y: undefined
+    };
+    var color = "#e5e5e5";
+    var size = 60;
+
+    function randomColor() {
+      var colors = ["", "#000000"];
+      color = colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function throttle(ms, fn) {
+      var lastCallTime;
+      return function() {
+        var now = Date.now();
+        if (!lastCallTime || now - lastCallTime > ms) {
+          lastCallTime = now;
+          fn.apply(this, arguments);
+        }
+      };
+    }
+
+    function drawCircle(event) {
+      context.beginPath();
+      context.arc(cursorPosition.x, cursorPosition.y, size, 0, 2 * Math.PI);
+      context.closePath();
+      context.fillStyle = color;
+      context.fill();
+      canvasImage = context.getImageData(
+        0,
+        0,
+        window.innerWidth,
+        window.innerHeight
+      );
+    }
+
+    window.onload = function() {
+      randomColor();
+      canvas = document.getElementById("background");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      context = canvas.getContext("2d");
+
+      window.onresize = throttle(100, function() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        context.clearRect(0, 0, window.innerWidth, window.innerHeight);
+        canvasImage && context.putImageData(canvasImage, 0, 0);
+      });
+
+      window.onmousemove = throttle(10, function(event) {
+        cursorPosition = {
+          x: event.clientX,
+          y: event.clientY
+        };
+        drawCircle(event);
+      });
+
+      window.ontouchmove = throttle(10, function(event) {
+        cursorPosition = {
+          x: event.touches[0].clientX,
+          y: event.touches[0].clientY
+        };
+        drawCircle(event);
+      });
+    };
+  </script>
+</body>
+
+
+<script src="skript.js"></script>
